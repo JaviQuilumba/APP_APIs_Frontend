@@ -7,7 +7,7 @@ import RESTful from "./Views/RESTful/RESTful";
 import GraphQL from "./Views/GraphQL/GraphQL";
 
 const client = new ApolloClient({
-    uri: 'http://localhost:3001/graphql',
+    uri: 'https://app-apis-btend-6rdhi.ondigitalocean.app/graphql',
     cache: new InMemoryCache()
 });
 
