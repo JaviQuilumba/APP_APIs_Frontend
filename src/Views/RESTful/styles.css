@@ -76,3 +76,7 @@ li {
     object-fit: cover; /* Asegura que la imagen cubra el contenedor manteniendo sus proporciones */
     display: block;
 }
+
+body {
+    background-color: #e1c194;
+}
