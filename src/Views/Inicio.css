@@ -4,11 +4,16 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-image: url('/frontend-apis/src/images/fondoAtardecer.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .content {
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente para el contenido */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 h1 {
