@@ -9,7 +9,7 @@ import SoapXML from "./Views/SOAP_XML/SoapXML";
 
 
 const client = new ApolloClient({
-    uri: 'https://app-apis-btend-6rdhi.ondigitalocean.app/graphql',
+    uri: 'https://app-appi-btend-45id9.ondigitalocean.app/graphql',
     cache: new InMemoryCache()
 });
 

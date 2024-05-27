@@ -24,7 +24,7 @@ function SoapXML() {
     }, []);
 
     const fetchMovies = () => {
-        fetch('https://app-apis-btend-6rdhi.ondigitalocean.app/xml/movies')
+        fetch('https://app-appi-btend-45id9.ondigitalocean.app/xml/movies')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Failed to fetch');
@@ -65,7 +65,7 @@ function SoapXML() {
                 <coverImage>${newMovie.coverImage}</coverImage>
             </movie>
         `;
-        fetch('https://app-apis-btend-6rdhi.ondigitalocean.app/xml/movies', {
+        fetch('https://app-appi-btend-45id9.ondigitalocean.app/xml/movies', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/xml'
@@ -100,7 +100,7 @@ function SoapXML() {
                 <coverImage>${editingMovie.coverImage}</coverImage>
             </movie>
         `;
-        fetch(`https://app-apis-btend-6rdhi.ondigitalocean.app/xml/movies/${editingMovie.id}`, {
+        fetch(`https://app-appi-btend-45id9.ondigitalocean.app/xml/movies/${editingMovie.id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/xml'
@@ -128,7 +128,7 @@ function SoapXML() {
     };
 
     const handleDeleteMovie = (id) => {
-        fetch(`https://app-apis-btend-6rdhi.ondigitalocean.app/xml/movies/${id}`, {
+        fetch(`https://app-appi-btend-45id9.ondigitalocean.app/xml/movies/${id}`, {
             method: 'DELETE'
         })
             .then(response => {

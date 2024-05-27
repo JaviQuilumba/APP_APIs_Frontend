@@ -24,7 +24,7 @@ function RESTful() {
     }, []);
 
     const fetchMovies = () => {
-        fetch('https://app-apis-btend-6rdhi.ondigitalocean.app/api/movies')
+        fetch('https://app-appi-btend-45id9.ondigitalocean.app/api/movies')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Failed to fetch');
@@ -45,7 +45,7 @@ function RESTful() {
     };
 
     const handleAddMovie = () => {
-        fetch('https://app-apis-btend-6rdhi.ondigitalocean.app/api/movies', {
+        fetch('https://app-appi-btend-45id9.ondigitalocean.app/api/movies', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -71,7 +71,7 @@ function RESTful() {
     };
 
     const handleEditMovie = () => {
-        fetch(`https://app-apis-btend-6rdhi.ondigitalocean.app/api/movies/${editingMovie.id}`, {
+        fetch(`https://app-appi-btend-45id9.ondigitalocean.app/api/movies/${editingMovie.id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -105,7 +105,7 @@ function RESTful() {
     };
 
     const handleDeleteMovie = (id) => {
-        fetch(`https://app-apis-btend-6rdhi.ondigitalocean.app/api/movies/${id}`, {
+        fetch(`https://app-appi-btend-45id9.ondigitalocean.app/api/movies/${id}`, {
             method: 'DELETE'
         })
             .then(response => {
