@@ -78,5 +78,6 @@ li {
 }
 
 body {
-    background-color: #F5F5DC;
+    background: linear-gradient(135deg, #E0F7FA, #F5FFFA); /* Gradiente de color */
+    margin: 0;
 }
